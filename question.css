@@ -1,0 +1,87 @@
+body{
+    font-family: "Nanum Gothic", sans-serif;
+    background-color:rgba(242, 251, 222, 1); 
+    background: linear-gradient(to bottom, rgba(242, 251, 222, 1), rgba(80, 148, 115, 0.7));
+    margin: 0;
+    padding: 0;
+}
+
+
+.custom-navbar{
+    background-color: rgba(80, 148, 115, 1);
+}
+
+#logo {
+    max-width: 100%;  
+    height: auto;    
+    max-height: 50px;
+}
+
+.nav-link{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #E15F2D; 
+}
+
+.nav-link.active {
+    color: #E15F2D !important; 
+}
+
+#introFAQ{
+    padding-top: 160px;
+}
+
+#intro {
+    position: relative;
+    text-align: center;
+  }
+  
+  #intro::before, #intro::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: #4caf50; 
+    top: 50%;
+  }
+  
+  #intro::before {
+    left: 0;
+  }
+  
+  #intro::after {
+    right: 0;
+  }
+  
+
+h3 {
+    font-family: "Black Han Sans", serif;
+    font-size: 2.7rem;     
+    color: rgba(66, 119, 78); ;
+}
+
+
+#intro p {
+    color: #42774E;
+    font-weight: bold;
+    font-size: 1.2rem;  
+}
+
+
+.exercise-faq-section h1 {
+    font-family: "Black Han Sans", serif;
+    color: #42774E;; 
+    font-size: 3rem; 
+}
+
+
+.faq-section h1  {
+    font-family: "Black Han Sans", serif;
+    color: #42774E;; 
+    font-size: 3rem; 
+}

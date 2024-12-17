@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BetterYou</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="food.css">
+
+    <!--구글 폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--네비게이션바-->
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top px-5">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="로고" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="important.html">운동과 식습관의 중요성</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="exercise.html">운동</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="food.html">식습관</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="question.html">Q&A</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--페이지 소개-->
+    <section class="faq-intro-section" id="introFood">
+      <div class="text-center">
+        <div class="row align-items-center">
+          <div class="col-lg-12" id="intro">
+            <h3 class="fw-bold mb-3">Healthy Recipe</h3>
+            <p>아래에서 레시피와 영양 정보를 확인해 보세요!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="foodRecipe">
+      <div class="container my-5">
+          <div class="row mx-5">
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/chicken_salad.jpg" class="card-img-top" alt="닭가슴살 샐러드">
+                <div class="card-body">
+                  <h5 class="card-title">닭가슴살 샐러드</h5>
+                  <p class="card-text">저지방 고단백인 닭가슴살을 사용하여 몸에 좋은 샐러드를 만들 수 있습니다. 다양한 채소와 함께 먹으면 영양 밸런스가 뛰어난 한 끼가 됩니다.</p>
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#newsModal1">레시피 보러 가기 <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/avocado_toast.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">아보카도 토스트</h5>
+                  <p class="card-text">아보카도는 건강에 좋은 지방이 풍부하며, 토스트와 함께 먹으면 간편하면서도 영양가 높은 아침 식사로 좋습니다.</p>
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#newsModal2">레시피 보러 가기 <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/green_smoothie.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">그린 스무디</h5>
+                  <p class="card-text">시금치, 케일, 바나나, 아보카도 등을 섞어 만든 건강한 음료로 비타민, 미네랄, 섬유질이 풍부해 간단히 먹기 편한 주스입니다.</p>
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#newsModal3">레시피 보러 가기 <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/yogurt.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">그릭 요거트와 베리</h5>
+                  <p class="card-text">고단백 그릭 요거트와 항산화가 풍부한 베리들을 섞은 건강한 간식입니다.</p>
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#newsModal4">레시피 보러 가기 <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/poke_bowl.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">포케 볼</h5>
+                  <p class="card-text"> 신선한 생선, 채소, 현미를 한 그릇에 담은 하와이안 스타일 건강식입니다.</p>
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#newsModal5">레시피 보러 가기 <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="images/rice_paper.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">채소 라이스페이퍼 롤</h5>
+                  <p class="card-text">쫀득한 라이스페이퍼에 신선한 채소를 가득 담은 저칼로리 요리입니다.</p>
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#newsModal6">레시피 보러 가기 <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!--모달-->
+          <div class="modal fade" id="newsModal1" tabindex="-1" aria-labelledby="newsModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="newsModalTitle">레시피 1: 닭가슴살 샐러드</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                </div>
+                <div class="modal-body">
+                  <h6 class="fw-bold">레시피</h6>
+                  <ol>
+                    <li>닭가슴살 1개를 삶아서 잘게 찢어줍니다.</li>
+                    <li>상추, 시금치, 토마토, 오이 등 신선한 채소를 준비해 함께 섞습니다.</li>
+                    <li>올리브유, 레몬즙, 발사믹 식초, 소금, 후추로 간을 맞추고, 닭가슴살을 올려 마무리합니다.</li>
+                  </ol>
+                  <h6 class="fw-bold mt-3">영양성분 (1인분 기준)</h6>
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>항목</th>
+                        <th>값</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>칼로리</td>
+                        <td>300 kcal</td>
+                      </tr>
+                      <tr>
+                        <td>단백질</td>
+                        <td>35 g</td>
+                      </tr>
+                      <tr>
+                        <td>탄수화물</td>
+                        <td>8 g</td>
+                      </tr>
+                      <tr>
+                        <td>지방</td>
+                        <td>12 g</td>
+                      </tr>
+                      <tr>
+                        <td>섬유질</td>
+                        <td>4 g</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    
+          <div class="modal fade" id="newsModal2" tabindex="-1" aria-labelledby="newsModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="newsModalTitle">아보카도 토스트</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                </div>
+                <div class="modal-body">
+                  <h6 class="fw-bold">레시피</h6>
+                  <ol>
+                    <li>아보카도 1개를 반으로 자르고 씨를 제거한 후, 속을 숟가락으로 긁어냅니다.</li>
+                    <li>토스트한 빵 위에 아보카도를 바르고, 소금, 후추로 간을 맞춥니다.</li>
+                    <li>토핑으로 올리브유, 토마토 슬라이스, 계란 후라이 등을 추가하면 더욱 맛있습니다.</li>
+                  </ol>
+                  <h6 class="fw-bold mt-3">영양성분 (1인분 기준)</h6>
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>항목</th>
+                        <th>값</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>칼로리</td>
+                        <td>250 kcal</td>
+                      </tr>
+                      <tr>
+                        <td>단백질</td>
+                        <td>6 g</td>
+                      </tr>
+                      <tr>
+                        <td>탄수화물</td>
+                        <td>20 g</td>
+                      </tr>
+                      <tr>
+                        <td>지방</td>
+                        <td>18 g</td>
+                      </tr>
+                      <tr>
+                        <td>섬유질</td>
+                        <td>10 g</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="newsModal3" tabindex="-1" aria-labelledby="newsModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="newsModalTitle">그린 스무디</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                </div>
+                <div class="modal-body">
+                  <h6 class="fw-bold">레시피</h6>
+                  <ol>
+                    <li>신선한 시금치 한 줌, 바나나 1개, 키위 1개, 아보카도 1/2개를 준비합니다.</li>
+                    <li>준비된 재료를 믹서기에 넣고, 무가당 아몬드 우유 또는 물 1컵을 추가합니다.</li>
+                    <li>믹서기로 곱게 갈아줍니다. 필요하면 꿀 한 스푼으로 단맛을 더합니다.</li>
+                  </ol>
+                  <h6 class="fw-bold mt-3">영양성분 (1인분 기준)</h6>
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>항목</th>
+                        <th>값</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>칼로리</td>
+                        <td>180 kcal</td>
+                      </tr>
+                      <tr>
+                        <td>단백질</td>
+                        <td>4 g</td>
+                      </tr>
+                      <tr>
+                        <td>탄수화물</td>
+                        <td>35 g</td>
+                      </tr>
+                      <tr>
+                        <td>지방</td>
+                        <td>5 g</td>
+                      </tr>
+                      <tr>
+                        <td>섬유질</td>
+                        <td>8 g</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="newsModal4" tabindex="-1" aria-labelledby="newsModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="newsModalTitle">그릭 요거트와 베리</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                </div>
+                <div class="modal-body">
+                  <h6 class="fw-bold">레시피</h6>
+                  <ol>
+                    <li>그릭 요거트(플레인) 1컵을 그릇에 담습니다.</li>
+                    <li>신선한 블루베리, 딸기, 라즈베리 등 좋아하는 베리를 1/2컵 준비합니다.</li>
+                    <li>베리를 요거트 위에 올리고, 꿀 1작은술과 견과류(아몬드, 호두) 약간을 뿌립니다.</li>
+                    <li>취향에 따라 그래놀라를 추가하여 완성합니다.</li>
+                  </ol>
+                  <h6 class="fw-bold mt-3">영양성분 (1인분 기준)</h6>
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>항목</th>
+                        <th>값</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>칼로리</td>
+                        <td>200 kcal</td>
+                      </tr>
+                      <tr>
+                        <td>단백질</td>
+                        <td>12 g</td>
+                      </tr>
+                      <tr>
+                        <td>탄수화물</td>
+                        <td>22 g</td>
+                      </tr>
+                      <tr>
+                        <td>지방</td>
+                        <td>6 g</td>
+                      </tr>
+                      <tr>
+                        <td>섬유질</td>
+                        <td>4 g</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    
+          <!-- 모달 -->
+          <div class="modal fade" id="newsModal5" tabindex="-1" aria-labelledby="newsModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="newsModalTitle">포케 볼</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                </div>
+                <div class="modal-body">
+                  <h6 class="fw-bold">레시피</h6>
+                  <ol>
+                    <li>밥(현미나 흰쌀밥) 1공기를 그릇에 담습니다.</li>
+                    <li>신선한 연어 또는 참치(사시미용)를 주사위 크기로 잘라 올립니다.</li>
+                    <li>아보카도 슬라이스, 오이, 당근, 무순, 김 조각을 토핑으로 추가합니다.</li>
+                    <li>간장 2큰술, 참기름 1작은술, 라임즙 약간을 섞어 드레싱을 준비합니다.</li>
+                    <li>드레싱을 골고루 뿌리고 참깨를 뿌려 마무리합니다.</li>
+                  </ol>
+                  <h6 class="fw-bold mt-3">영양성분 (1인분 기준)</h6>
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>항목</th>
+                        <th>값</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>칼로리</td>
+                        <td>450 kcal</td>
+                      </tr>
+                      <tr>
+                        <td>단백질</td>
+                        <td>30 g</td>
+                      </tr>
+                      <tr>
+                        <td>탄수화물</td>
+                        <td>40 g</td>
+                      </tr>
+                      <tr>
+                        <td>지방</td>
+                        <td>15 g</td>
+                      </tr>
+                      <tr>
+                        <td>섬유질</td>
+                        <td>6 g</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="newsModal6" tabindex="-1" aria-labelledby="newsModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="newsModalTitle">채소 라이스페이퍼 롤</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+                </div>
+                <div class="modal-body">
+                  <h6 class="fw-bold">레시피</h6>
+                  <ol>
+                    <li>라이스페이퍼를 따뜻한 물에 살짝 담가 부드럽게 만듭니다.</li>
+                    <li>당근, 오이, 파프리카, 아보카도, 신선한 허브(민트나 고수)를 얇게 채썰어 준비합니다.</li>
+                    <li>부드러워진 라이스페이퍼 중앙에 준비한 채소를 올립니다.</li>
+                    <li>라이스페이퍼를 양옆으로 접은 후 단단히 말아줍니다.</li>
+                    <li>땅콩소스나 간장 소스를 곁들여 제공합니다.</li>
+                  </ol>
+                  <h6 class="fw-bold mt-3">영양성분 (1인분 기준)</h6>
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>항목</th>
+                        <th>값</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>칼로리</td>
+                        <td>200 kcal</td>
+                      </tr>
+                      <tr>
+                        <td>단백질</td>
+                        <td>5 g</td>
+                      </tr>
+                      <tr>
+                        <td>탄수화물</td>
+                        <td>35 g</td>
+                      </tr>
+                      <tr>
+                        <td>지방</td>
+                        <td>4 g</td>
+                      </tr>
+                      <tr>
+                        <td>섬유질</td>
+                        <td>6 g</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    
+          <!-- 페이지 네비게이션 -->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#foodRecipe">1</a></li>
+              <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
+              <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+              <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+    
+    
+
+
+
+    <!--푸터-->
+    <footer class="bg-dark text-white">
+      <div class="container text-center">
+          <p class="py-4 mb-0">Copyright <i class="bi bi-c-circle"></i> 2024 Designed by BetterYou</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  </body>
+
+
+</html>
